@@ -2,12 +2,17 @@ namespace Model {
     export class News {
         public id: number;
         public title: string;
-        public publishedOn: Date;
-        public summary: string;
         public titleImg: string;
-        public tags: Array<Tag>;
+        public publishedOn: Date;
+        public section: string;
+        public summary: string;
         public author: string;
+        public infoType: string;
+        public rating: number;
+        public infoView: number;
+        public infoComment: number;
         public comments: Array<Comment>;
+        public tags: Array<Tag>;
     }
 
     export class Tag {
