@@ -61,7 +61,7 @@ export class ShortStoryComponent implements OnInit {
       {
         id: 1,
         title: 'dfgfdhdf',
-        titleImg: 'app/layout/shortStory/images/mdl.jpg',
+        titleImg: 'app/images/mdl.jpg',
         publishedOn: new Date(2017, 10, 3),
         section: 'Angular',
         // tslint:disable-next-line:max-line-length
