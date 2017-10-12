@@ -4,16 +4,19 @@
     <nav class="mdl-navigation">
         <a class="mdl-navigation__link" >Статьи</a>
         <a class="mdl-navigation__link" >Новости</a>
+        <a class="mdl-navigation__link" >Видео</a>
         <a class="mdl-navigation__link" >Обзоры</a>
     </nav>
     <mdl-layout-spacer></mdl-layout-spacer>
-    <span>Добро пожаловать, {{ username }}!</span>
-    <button mdl-button #btn2="mdlButton" (click)="m2.toggle($event, btn2)" mdl-button-type="icon" mdl-ripple><mdl-icon>more_vert</mdl-icon></button>
+    <input type="search" placeholder="Поиск">
+    <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png" alt="Поиск" width="20px" height="20px">
+    <!-- <span>Добро пожаловать, {{ username }}!</span> -->
+    <!-- <button mdl-button #btn2="mdlButton" (click)="m2.toggle($event, btn2)" mdl-button-type="icon" mdl-ripple><mdl-icon>more_vert</mdl-icon></button>
     <mdl-menu #m2="mdlMenu" mdl-menu-position="bottom-right">
        <mdl-menu-item mdl-ripple (click)="action()">Some Action</mdl-menu-item>
        <mdl-menu-item mdl-ripple mdl-menu-item-full-bleed-divider>Another Action</mdl-menu-item>
        <mdl-menu-item mdl-ripple disabled>Disabled Action</mdl-menu-item>
        <mdl-menu-item>Yet Another Action</mdl-menu-item> 
-    </mdl-menu>
+    </mdl-menu> -->
  </mdl-layout-header-row>
  

@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-// import * as Model from '../../model/model';
 
 @Component({
   selector: 'app-shortstory',
-  templateUrl: './shortStory.component.html',
-  styleUrls: ['./shortStory.component.css']
+  templateUrl: './shortstory.component.html',
+  styleUrls: ['./shortstory.component.css']
 })
-export class ShortStoryComponent implements OnInit {
+export class ShortstoryComponent implements OnInit {
 
-  news: Array<any>;
+  news: Array<Model.News>;
 
   constructor() { }
 
   ngOnInit() {
     this.news = this.getNews();
-    console.log(this.news);
+    // console.log(this.news);
   }
 
   getNews() {
@@ -60,17 +59,17 @@ export class ShortStoryComponent implements OnInit {
       },
       {
         id: 1,
-        title: 'dfgfdhdf',
-        titleImg: 'app/layout/shortStory/images/mdl.jpg',
-        publishedOn: new Date(2017, 10, 3),
-        section: 'Angular',
+        title: 'GitHub',
+        titleImg: 'app/layout/shortstory/images/github.png',
+        publishedOn: new Date(2017, 10, 10),
+        section: 'Git',
         // tslint:disable-next-line:max-line-length
-        summary: 'Angular CLI (command line interface) это инструмент без которого сложно представить разработку Angular приложений. Создать новое angular приложение, настроить маршрутизацию в angular приложении, создать компонент, директиву или pipe – все это можно сделать в два клика с помощью angular cli.',
+        summary: 'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки. Основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome).',
         author: 'Pasha',
         infoType: 'Статья',
-        rating: 3,
-        infoView: 77,
-        infoComment: 12,
+        rating: 11,
+        infoView: 83,
+        infoComment: 9,
         readMore: '',
         tags: [
           {
