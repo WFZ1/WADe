@@ -58,18 +58,18 @@ export class ShortstoryComponent implements OnInit {
         ]
       },
       {
-        id: 1,
-        title: 'GitHub',
-        titleImg: 'app/layout/shortstory/images/github.png',
-        publishedOn: new Date(2017, 10, 10),
-        section: 'Git',
+        id: 2,
+        title: 'Angular2 - Material Design Lite',
+        titleImg: 'app/images/mdl.jpg',
+        publishedOn: new Date(2017, 11, 2),
+        section: 'Angular',
         // tslint:disable-next-line:max-line-length
-        summary: 'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки. Основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome).',
+        summary: 'Angular2 MDL представляет собой библиотеку компонентов для Angular2, базирующуюся на Material Design Lite. Она поддерживает AOT и tree shaking. Компоненты которые доступны прямо сейчас: значки, кнопки, карты, чипы, диалоги, значки, загрузка, тень, переключение, списки, реактивные формы, слайдер, закусочная, стол, подсказки , Меню, макет, вкладки, текстовые поля.',
         author: 'Pasha',
         infoType: 'Статья',
-        rating: 11,
-        infoView: 83,
-        infoComment: 9,
+        rating: 8,
+        infoView: 250,
+        infoComment: 23,
         readMore: '',
         tags: [
           {
@@ -97,18 +97,18 @@ export class ShortstoryComponent implements OnInit {
         ]
       },
       {
-        id: 2,
-        title: 'Angular2 - Material Design Lite',
-        titleImg: 'https://17404-presscdn-0-71-pagely.netdna-ssl.com/studio/wp-content/uploads/2017/02/featured_mdl.jpg',
-        publishedOn: new Date(2017, 11, 2),
+        id: 1,
+        title: 'GitHub',
+        titleImg: 'app/images/github.png',
+        publishedOn: new Date(2017, 10, 10),
         section: 'Angular',
         // tslint:disable-next-line:max-line-length
-        summary: 'Angular2 MDL представляет собой библиотеку компонентов для Angular2, базирующуюся на Material Design Lite. Она поддерживает AOT и tree shaking. Компоненты которые доступны прямо сейчас: значки, кнопки, карты, чипы, диалоги, значки, загрузка, тень, переключение, списки, реактивные формы, слайдер, закусочная, стол, подсказки , Меню, макет, вкладки, текстовые поля.',
+        summary: 'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки. Основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome).',
         author: 'Pasha',
         infoType: 'Статья',
-        rating: 8,
-        infoView: 250,
-        infoComment: 23,
+        rating: 11,
+        infoView: 83,
+        infoComment: 9,
         readMore: '',
         tags: [
           {
