@@ -1,0 +1,9 @@
+mdl-layout-content {
+    background-color: #F7F7F7;
+}
+
+app-header {
+    width: 1170px;
+    margin: auto;
+    /* outline: green 1px solid; */
+}
