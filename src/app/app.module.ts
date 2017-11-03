@@ -7,6 +7,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { ShortstoryComponent } from './layout/shortstory/shortstory.component';
 import { ContentComponent } from './layout/content/content.component';
+import { LoginDialogComponent } from './layout/login-dialog/login-dialog.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +16,15 @@ import { ContentComponent } from './layout/content/content.component';
     FooterComponent,
     SidebarComponent,
     ShortstoryComponent,
-    ContentComponent
+    ContentComponent,
+    LoginDialogComponent
   ],
   imports: [
     BrowserModule,
     MdlModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [LoginDialogComponent]
 })
 export class AppModule { }

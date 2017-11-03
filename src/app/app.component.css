@@ -2,6 +2,10 @@ mdl-layout-content {
     background-color: #F7F7F7;
 }
 
+mdl-layout-header {
+    border-bottom: 10px solid #C9D468;
+}
+
 app-header {
     width: 1170px;
     margin: auto;

@@ -16,13 +16,12 @@ export class ShortstoryComponent implements OnInit {
     // console.log(this.news);
   }
 
-  isOld(publishedOn: Date): boolean {
-    const dd: number = Number(publishedOn.getMonth());
-
-    if(dd < 10) {
+  // Фон новости: старые закрашиваются светло зеленым
+  isOld(month: Date): boolean {
+    if (month.getMonth() < 10) {
       return true;
     }
-      return false;
+    return false;
   }
 
   getNews() {

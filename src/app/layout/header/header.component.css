@@ -1,5 +1,6 @@
 mdl-layout-header-row {
     padding: 0;
+    
 }
 
 input[type="search"] {
@@ -19,4 +20,41 @@ button {
     background-color: transparent;
     margin-left: -28px;
     vertical-align: middle;
+}
+
+a#login {
+    display: block;
+    width: 80px;
+    height: 30px;
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: #C9D468;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 30px;
+    position: relative
+}
+
+a#login:hover {
+    background: #C2D423;
+}
+
+span.login_dot {
+    display: block;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    height: 4px;
+    background: #818843;
+}
+
+span#login_dot_l {
+    left: 10px;
+}
+
+span#login_dot_r {
+    right: 10px;
 }
