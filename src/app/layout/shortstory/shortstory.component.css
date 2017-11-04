@@ -1,5 +1,4 @@
 article {
-    /* outline: 1px solid red; */
     font-family: 'Open Sans', sans-serif;
     width: 840px;
     background-color: #fff;
@@ -19,7 +18,8 @@ h1 a {
     color: #464646;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 a:hover {

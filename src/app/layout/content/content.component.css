@@ -1,5 +1,14 @@
 div {
     width: 1170px;
-    margin: auto;
+    margin: 24px auto;
+    overflow: hidden;
     /* outline: red 1px solid; */
+}
+
+app-shortstory {
+    float: left;
+}
+
+app-sidebar {
+    float: right;
 }

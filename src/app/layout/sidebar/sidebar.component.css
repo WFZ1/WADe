@@ -1,0 +1,98 @@
+aside {
+    width: 300px;
+}
+
+#sidebar__block_menu {
+    box-sizing: border-box;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+
+#sidebar__block_header {
+    padding: 25px 25px 20px;
+    border: 4px solid #f1f1f1;
+    border-bottom: none;
+}
+
+#sidebar__block_menu h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#sidebar__block_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar__block_menu li {
+    list-style: none;
+    border-top: 1px solid #eeeff0;
+}
+
+#sidebar__block_menu a {
+    text-decoration: none;
+    display: block;
+    padding: 14px 25px;
+    color: #6d6d6d;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 4px solid #f1f1f1;
+    border-right: 4px solid #f1f1f1;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#sidebar__block_menu a:hover {
+    color: #f34f4f;
+    border-left: 4px solid #f34f4f;
+}
+
+#sidebar__block_menu a:hover:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #f34f4f;
+    vertical-align: middle;
+    position: absolute;
+    right: 25px;
+    top: 24px;
+}
+
+#sidebar__block_menu ul li:last-child a {
+    border-bottom: 4px solid #f1f1f1;
+}
+
+#sidebar__block_menu i {
+    margin-right: 5px;
+}
+
+#sidebar__banner {
+    height: 75px;
+    padding: 45px 25px 35px 25px;
+    border: 4px solid #f1f1f1;
+    background: url(../../../app/images/youtube.png) no-repeat #fff;
+    background-size: 50%;
+    background-position: center 30px;
+}
+
+#sidebar__banner a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #0f0f0f;
+    padding-top: 61px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#sidebar__banner a span {
+    color: #df2d28;
+}

@@ -1,10 +1,10 @@
-<article *ngFor="let n of news" [class.old]="isOld(n.publishedOn)">
-    <h1><a href="#"> {{ n.title }} </a></h1>
+<article *ngFor="let n of news">  <!--[class.old]="isOld(n.publishedOn)"-->
+    <h1><a href="#">{{ n.title }}</a></h1>
     <img [src]="n.titleImg" alt="Photo">
     <div class="shortstory_text">
         <div class="shortstory_text_info">
-            <time datetime=""> {{ n.publishedOn }} </time>
-            <a href="#"> {{ n.section }} </a>
+            <time>{{ readDate(n.publishedOn) }}</time>
+            <a href="#">{{ n.section }}</a>
         </div>
         <p> {{ n.summary }} </p>
     </div>

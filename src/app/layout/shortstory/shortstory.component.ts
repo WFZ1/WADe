@@ -13,15 +13,34 @@ export class ShortstoryComponent implements OnInit {
 
   ngOnInit() {
     this.news = this.getNews();
-    // console.log(this.news);
   }
 
   // Фон новости: старые закрашиваются светло зеленым
   isOld(month: Date): boolean {
-    if (month.getMonth() < 10) {
+    if (month.getMonth() + 1 < 11) {
       return true;
     }
     return false;
+  }
+
+  readDate(dd: Date): string {
+    let str: string = '';
+
+    str += (dd.getDate() < 10) ? '0' : '';
+    str += dd.getDate() + '-';
+
+    str += (dd.getMonth() < 9) ? '0' : '';
+    str += dd.getMonth() + 1 + '-';
+
+    str += dd.getFullYear() + ', ';
+
+    str += (dd.getHours() < 10) ? '0' : '';
+    str += dd.getHours() + ':';
+
+    str += (dd.getMinutes() < 10) ? '0' : '';
+    str += dd.getMinutes();
+
+    return str;
   }
 
   getNews() {
@@ -29,8 +48,8 @@ export class ShortstoryComponent implements OnInit {
       {
         id: 1,
         title: 'Видеокурс ANGULAR CLI',
-        titleImg: 'https://i1.wp.com/keyholesoftware.com/wp-content/uploads/Angular-CLI-logo.png?fit=700%2C400&ssl=1',
-        publishedOn: new Date(2017, 9, 3),
+        titleImg: 'app/images/angular_cli.png',
+        publishedOn: new Date(2017, 8, 3, 16, 35),
         section: 'Angular',
         // tslint:disable-next-line:max-line-length
         summary: 'Angular CLI (command line interface) это инструмент без которого сложно представить разработку Angular приложений. Создать новое angular приложение, настроить маршрутизацию в angular приложении, создать компонент, директиву или pipe – все это можно сделать в два клика с помощью angular cli.',
@@ -69,7 +88,7 @@ export class ShortstoryComponent implements OnInit {
         id: 2,
         title: 'Angular2 - Material Design Lite',
         titleImg: 'app/images/mdl.jpg',
-        publishedOn: new Date(2017, 9, 2),
+        publishedOn: new Date(2017, 9, 2, 12, 57),
         section: 'Angular',
         // tslint:disable-next-line:max-line-length
         summary: 'Angular2 MDL представляет собой библиотеку компонентов для Angular2, базирующуюся на Material Design Lite. Она поддерживает AOT и tree shaking. Компоненты которые доступны прямо сейчас: значки, кнопки, карты, чипы, диалоги, значки, загрузка, тень, переключение, списки, реактивные формы, слайдер, закусочная, стол, подсказки , Меню, макет, вкладки, текстовые поля.',
@@ -108,7 +127,7 @@ export class ShortstoryComponent implements OnInit {
         id: 1,
         title: 'GitHub',
         titleImg: 'app/images/github.png',
-        publishedOn: new Date(2017, 10, 10),
+        publishedOn: new Date(2017, 10, 10, 23, 59),
         section: 'Git',
         // tslint:disable-next-line:max-line-length
         summary: 'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки. Основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome).',
