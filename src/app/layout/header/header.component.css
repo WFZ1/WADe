@@ -1,6 +1,15 @@
 mdl-layout-header-row {
     padding: 0;
-    
+    font-family: 'Open Sans', sans-serif;
+}
+
+mdl-layout-title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+mdl-layout-title a:hover, .mdl-navigation__link:hover {
+    color: #B58B8B;
 }
 
 input[type="search"] {
@@ -8,7 +17,7 @@ input[type="search"] {
     padding: 5px 28px 5px 8px;
     font-size: 14px;
     border-radius: 3px;
-    /* border: none; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 button {
@@ -31,7 +40,7 @@ a#login {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 2px;
-    background: #C9D468;
+    background: #B58B8B;
     text-align: center;
     border-radius: 15px;
     line-height: 30px;
@@ -39,7 +48,7 @@ a#login {
 }
 
 a#login:hover {
-    background: #C2D423;
+    background: #E13838;
 }
 
 span.login_dot {
@@ -48,7 +57,7 @@ span.login_dot {
     top: 12px;
     width: 4px;
     height: 4px;
-    background: #818843;
+    background: #8B6868;
 }
 
 span#login_dot_l {
