@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-fullstory',
   templateUrl: './fullstory.component.html',
   styleUrls: ['./fullstory.component.css']
 })
-export class FullstoryComponent implements OnInit {
+export class FullstoryComponent implements OnInit, OnDestroy {
 
+  routeSubscription: Subscription;
   id: number;
 
   constructor(private activateRoute: ActivatedRoute) {
-    this.id = activateRoute.snapshot.params['id'];
+    this.routeSubscription = activateRoute.params.subscribe((pars) => this.id = +pars['id']);
   }
 
   articles: Array<any>;
@@ -42,4 +44,7 @@ export class FullstoryComponent implements OnInit {
     ];
   }
 
+  ngOnDestroy() {
+    this.routeSubscription.unsubscribe();
+  }
 }
