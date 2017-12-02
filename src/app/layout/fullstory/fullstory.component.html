@@ -1,7 +1,7 @@
-<article>
-    <h2>{{ articles[id-1].title }}</h2>
-    <img [src]="articles[id-1].titleImg" alt="Photo">
-    <p> {{ articles[id-1].description }} </p>
+<article *ngIf="article">
+    <h2>{{ article.title }}</h2>
+    <img [src]="article.titleImg" alt="Photo">
+    <p> {{ article.description }} </p>
     <br>
     <h4><a routerLink="/articles/1">Статья 1</a></h4>
     <h4><a routerLink="/articles/2">Статья 2</a></h4>

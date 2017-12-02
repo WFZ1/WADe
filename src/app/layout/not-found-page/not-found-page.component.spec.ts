@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { InfoBlockFailureComponent } from './info-block-failure.component';
+import { NotFoundPageComponent } from './not-found-page.component';
 
-describe('InfoBlockFailureComponent', () => {
-  let component: InfoBlockFailureComponent;
-  let fixture: ComponentFixture<InfoBlockFailureComponent>;
+describe('NotFoundPageComponent', () => {
+  let component: NotFoundPageComponent;
+  let fixture: ComponentFixture<NotFoundPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InfoBlockFailureComponent ]
+      declarations: [ NotFoundPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InfoBlockFailureComponent);
+    fixture = TestBed.createComponent(NotFoundPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
