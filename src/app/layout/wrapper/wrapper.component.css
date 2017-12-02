@@ -1,0 +1,13 @@
+div {
+    width: 1170px;
+    margin: 24px auto;
+    overflow: hidden;
+}
+
+app-content {
+    float: left;
+}
+
+app-sidebar {
+    float: right;
+}

@@ -26,4 +26,9 @@ namespace Model {
         public publishedOn: Date;
         public text: string;
     }
+
+    export class Fullstory {
+        public title: string;
+        public text: string;
+    }
 }

@@ -15,7 +15,7 @@
       <li> <a href="#"><i class="fa fa-arrow-down" aria-hidden="true"></i></a> <span>{{ n.rating }}</span> <a href=""><i class="fa fa-arrow-up" aria-hidden="true"></i></a> </li>
       <li> <i class="fa fa-eye" aria-hidden="true"></i> <span>{{ n.infoView }}</span> </li>
       <li> <a href=""><i class="fa fa-comment" aria-hidden="true"></i> <span>{{ n.infoComment }}</span></a> </li>
-      <li> <a [href]="n.readMore" class="readMore">ЧИТАТЬ ДАЛЕЕ</a> </li>
+      <li> <a class="readMore" routerLink="/articles/{{n.id}}">ЧИТАТЬ ДАЛЕЕ</a> </li>
     </ul>
 </article>
 <nav>

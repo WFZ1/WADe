@@ -124,7 +124,7 @@ export class ShortstoryComponent implements OnInit {
         ]
       },
       {
-        id: 1,
+        id: 3,
         title: 'GitHub',
         titleImg: 'app/images/github.png',
         publishedOn: new Date(2017, 10, 10, 23, 59),
