@@ -1,5 +1,5 @@
 namespace Model {
-    export class News {
+    export class Article {
         public id: number;
         public title: string;
         public titleImg: string;

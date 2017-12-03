@@ -4,6 +4,8 @@ import { MdlModule } from '@angular-mdl/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+import { BackendService } from './services/backend.service';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { WrapperComponent } from './layout/wrapper/wrapper.component';
@@ -51,7 +53,7 @@ import { LoginDialogComponent } from './layout/login-dialog/login-dialog.compone
       { path: '**', redirectTo: '/' }
     ])
   ],
-  providers: [],
+  providers: [BackendService],
   bootstrap: [AppComponent],
   entryComponents: [LoginDialogComponent]
 })
