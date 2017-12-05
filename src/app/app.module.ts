@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MdlModule } from '@angular-mdl/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { BackendService } from './services/backend.service';
 
@@ -10,7 +11,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { WrapperComponent } from './layout/wrapper/wrapper.component';
 import { FooterComponent } from './layout/footer/footer.component';
-
 import { ContentComponent } from './layout/content/content.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { ShortstoryComponent } from './layout/tab-bar/shortstory/shortstory.component';
@@ -20,8 +20,6 @@ import { NewsTabComponent } from './layout/tab-bar/news-tab/news-tab.component';
 import { ReviewTabComponent } from './layout/tab-bar/review-tab/review-tab.component';
 import { NotFoundPageComponent } from './layout/not-found-page/not-found-page.component';
 
-import { LoginDialogComponent } from './layout/login-dialog/login-dialog.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +28,6 @@ import { LoginDialogComponent } from './layout/login-dialog/login-dialog.compone
     SidebarComponent,
     ShortstoryComponent,
     ContentComponent,
-    LoginDialogComponent,
     WrapperComponent,
     FullstoryComponent,
     VideoTabComponent,
@@ -42,6 +39,7 @@ import { LoginDialogComponent } from './layout/login-dialog/login-dialog.compone
     BrowserModule,
     MdlModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: '', component: ShortstoryComponent },
       { path: 'articles', component: ShortstoryComponent },
@@ -54,7 +52,6 @@ import { LoginDialogComponent } from './layout/login-dialog/login-dialog.compone
     ])
   ],
   providers: [BackendService],
-  bootstrap: [AppComponent],
-  entryComponents: [LoginDialogComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

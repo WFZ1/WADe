@@ -5,12 +5,10 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class BackendService {
-
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) {}
 
     public getArticleList():  Observable<Model.Article[]> {
         return this.http.get('../../assets/article-list.json').map(data  => {
-
             const arr = data as Array<any>; // преобразование к типу Array
 
             for (let i = 0; i < arr.length; i++) {
