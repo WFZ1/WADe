@@ -1,6 +1,5 @@
 mdl-layout-header-row {
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
 mdl-layout-title a {
@@ -17,7 +16,6 @@ input[type="search"] {
     padding: 5px 28px 5px 8px;
     font-size: 14px;
     border-radius: 3px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 button {

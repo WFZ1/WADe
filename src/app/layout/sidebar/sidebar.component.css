@@ -20,7 +20,6 @@ aside {
     font-weight: bold;
     letter-spacing: 2px;
     color: #464646;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #sidebar__block_menu ul {
@@ -43,7 +42,6 @@ aside {
     border-left: 4px solid #f1f1f1;
     border-right: 4px solid #f1f1f1;
     position: relative;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #sidebar__block_menu a:hover {
@@ -89,7 +87,6 @@ aside {
     letter-spacing: 1px;
     color: #0f0f0f;
     padding-top: 61px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
 

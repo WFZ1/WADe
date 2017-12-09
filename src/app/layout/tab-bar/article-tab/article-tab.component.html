@@ -1,9 +1,9 @@
-<article *ngFor="let n of articles">  <!--[class.old]="isOld(n.publishedOn)"-->
+<article *ngFor="let n of articles">
     <h1><a href="#">{{ n.title }}</a></h1>
     <img [src]="n.titleImg" alt="Photo">
     <div class="shortstory_text">
         <div class="shortstory_text_info">
-            <time>{{ readDate(n.publishedOn) }}</time>
+            <time>{{ date.readDate(n.publishedOn) }}</time>
             <a href="#">{{ n.section }}</a>
         </div>
         <p> {{ n.summary }} </p>
