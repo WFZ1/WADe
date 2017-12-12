@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { CreateArticleService } from '../../services/create-article.service';
 
 @Component({
   selector: 'app-create-article',
@@ -10,61 +10,13 @@ export class CreateArticleComponent implements OnInit {
 
   article: Model.Article;
 
-  constructor(private router: Router) { }
+  constructor(public create: CreateArticleService) { }
 
   ngOnInit() {
-    this.article = this.getArticle(null);
-  }
-
-  getArticle(paramId: number | null): Model.Article {
-    return {
-      id: -1,
-      title: '',
-      titleImg: '',
-      publishedOn: new Date(),
-      section: '',
-      summary: '',
-      author: '',
-      infoType: 'Cтатья',
-      rating: 0,
-      infoView: 0,
-      infoComment: 0,
-      comments: [
-        {
-          id: 1,
-          author: 'author1',
-          publishedOn: new Date(),
-          text: 'bla-bla'
-        },
-        {
-          id: 2,
-          author: 'author2',
-          publishedOn: new Date(),
-          text: 'bla-bla'
-        }
-      ],
-      tags: [
-        {
-          id: 1,
-          title: 'tag1'
-        },
-        {
-          id: 2,
-          title: 'tag2'
-        }
-      ]
-    };
+    this.article = this.create.getArticle(null);
   }
 
   onTitleChanging() {
     this.article.title = this.article.title.toUpperCase();
-  }
-
-  save() {
-    console.log(this.article);
-  }
-
-  cancel() {
-    this.router.navigate(['/articles']);
   }
 }

@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import { BackendService } from './services/backend.service';
 import { DateService } from './services/date.service';
+import { CreateArticleService } from './services/create-article.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -55,7 +56,7 @@ import { CreateArticleComponent } from './layout/create-article/create-article.c
       { path: '**', redirectTo: '/' }
     ])
   ],
-  providers: [BackendService, DateService],
+  providers: [BackendService, DateService, CreateArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

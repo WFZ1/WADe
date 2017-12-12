@@ -25,6 +25,6 @@
         #articleAuthor="ngModel">
         <span [hidden]="articleAuthor.valid || articleAuthor.untouched" class="alert-danger">Поле является обязательным</span>
     </div>
-    <button class="btn btn-outline-primary" (click)="save()" [disabled]="frmCreateArticle.invalid">Сохранить</button>
-    <button class="btn btn-outline-dark" (click)="cancel()">Отменить</button>
+    <button class="btn btn-outline-primary" (click)="create.save(article)" [disabled]="frmCreateArticle.invalid">Сохранить</button>
+    <button class="btn btn-outline-dark" (click)="create.cancel()">Отменить</button>
 </form>

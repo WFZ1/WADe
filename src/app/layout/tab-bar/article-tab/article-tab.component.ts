@@ -1,19 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { BackendService } from '../../../services/backend.service';
+import { Component } from '@angular/core';
 import { DateService } from '../../../services/date.service';
+import { CreateArticleService } from '../../../services/create-article.service';
 
 @Component({
   selector: 'app-article-tab',
   templateUrl: './article-tab.component.html',
   styleUrls: ['./article-tab.component.css']
 })
-export class ArticleTabComponent implements OnInit {
+export class ArticleTabComponent {
 
-  articles: Array<Model.Article>;
-
-  constructor(private backend: BackendService, private date: DateService) { }
-
-  ngOnInit() {
-    this.backend.getArticleList().subscribe((data: Model.Article[]) => this.articles = data);
-  }
+  constructor(private date: DateService, public create: CreateArticleService) { }
 }
