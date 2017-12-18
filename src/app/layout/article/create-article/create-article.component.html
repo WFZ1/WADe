@@ -1,0 +1,32 @@
+<form #frmCreateArticle="ngForm" novalidate>
+    <div>
+        <label for="title">Название статьи</label>
+        <input type="text" name="title" id="title" class="form-control" [(ngModel)]="article.title" required
+        (ngModelChange)="onTitleChanging()" #articleTitle="ngModel">
+        <span [hidden]="articleTitle.valid || articleTitle.untouched" class="alert-danger">Поле является обязательным</span>
+    </div>
+    <div>
+        <label for="img">Загрузить картинку (url)</label>
+        <input type="text" name="img" id="img" class="form-control" [(ngModel)]="article.titleImg" required
+        #articleImg="ngModel">
+        <span [hidden]="articleImg.valid || articleImg.untouched" class="alert-danger">Поле является обязательным</span>
+    </div>
+    <div>
+        <label for="section">Раздел(ы)</label>
+        <input type="text" name="section" id="section" class="form-control" [(ngModel)]="article.section">
+    </div>
+    <div>
+        <label for="summary">Описание</label>
+        <textarea name="summary" id="summary" cols="30" rows="10" class="form-control" [(ngModel)]="article.summary" required
+        #articleSummary="ngModel"></textarea>
+        <span [hidden]="articleSummary.valid || articleSummary.untouched" class="alert-danger">Поле является обязательным</span>
+    </div>
+    <div>
+        <label for="author">Автор</label>
+        <input type="text" name="author" id="author" class="form-control" [(ngModel)]="article.author" required
+        #articleAuthor="ngModel">
+        <span [hidden]="articleAuthor.valid || articleAuthor.untouched" class="alert-danger">Поле является обязательным</span>
+    </div>
+    <button class="btn btn-outline-primary" (click)="create.save(article)" [disabled]="frmCreateArticle.invalid">Сохранить</button>
+    <button class="btn btn-outline-dark" (click)="create.cancel()">Отменить</button>
+</form>

@@ -7,3 +7,22 @@ footer {
     width: 1170px;
     margin: auto;
 }
+
+#iFooter {
+    text-align: center;
+    color: #CCCBCB;
+}
+
+#iFooter span {
+    text-decoration: line-through;
+}
+
+#iFooter a {
+    text-decoration: none;
+    color: #CCCBCB;
+    font-weight: bold;
+}
+
+#iFooter a:hover {
+    color: #fff;
+}

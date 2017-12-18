@@ -1,3 +1,8 @@
+/* @font-face {
+    font-family: 'Open Sans';
+    src: url(assets/fonts/OpenSans-Regular.ttf);
+   } */
+
 body, h1, input {
     font-family: 'Open Sans', sans-serif;
 }

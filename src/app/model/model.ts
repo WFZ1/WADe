@@ -28,6 +28,7 @@ namespace Model {
     }
 
     export class Fullstory {
+        public id: number;
         public title: string;
         public text: string;
     }

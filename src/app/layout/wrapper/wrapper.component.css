@@ -1,13 +1,15 @@
-div {
+#wrapper {
     width: 1170px;
     margin: 24px auto;
     overflow: hidden;
 }
 
-app-content {
+#content {
     float: left;
+    width: 840px;
 }
 
 app-sidebar {
     float: right;
 }
+

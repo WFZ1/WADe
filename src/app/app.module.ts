@@ -6,22 +6,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { BackendService } from './services/backend.service';
-import { DateService } from './services/date.service';
-import { CreateArticleService } from './services/create-article.service';
+import { ArticleService } from './services/article.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { WrapperComponent } from './layout/wrapper/wrapper.component';
 import { FooterComponent } from './layout/footer/footer.component';
-import { ContentComponent } from './layout/content/content.component';
+import { WrapperComponent } from './layout/wrapper/wrapper.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { ArticleTabComponent } from './layout/tab-bar/article-tab/article-tab.component';
-import { FullstoryComponent } from './layout/fullstory/fullstory.component';
+import { ArticleTabComponent } from './layout/article/article-tab/article-tab.component';
+import { FullstoryComponent } from './layout/article/fullstory/fullstory.component';
 import { VideoTabComponent } from './layout/tab-bar/video-tab/video-tab.component';
 import { NewsTabComponent } from './layout/tab-bar/news-tab/news-tab.component';
 import { ReviewTabComponent } from './layout/tab-bar/review-tab/review-tab.component';
 import { NotFoundPageComponent } from './layout/not-found-page/not-found-page.component';
-import { CreateArticleComponent } from './layout/create-article/create-article.component';
+import { CreateArticleComponent } from './layout/article/create-article/create-article.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +28,6 @@ import { CreateArticleComponent } from './layout/create-article/create-article.c
     FooterComponent,
     SidebarComponent,
     ArticleTabComponent,
-    ContentComponent,
     WrapperComponent,
     FullstoryComponent,
     VideoTabComponent,
@@ -56,7 +53,7 @@ import { CreateArticleComponent } from './layout/create-article/create-article.c
       { path: '**', redirectTo: '/' }
     ])
   ],
-  providers: [BackendService, DateService, CreateArticleService],
+  providers: [BackendService, ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
